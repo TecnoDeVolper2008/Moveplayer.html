@@ -1,0 +1,178 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #e50914;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.watch-now-btn {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-now-btn:hover {
+    background-color: #f61425;
+}
+
+.watch-now-btn:active {
+    background-color: #cc0911;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+/* Movie Detail Page */
+.movie-detail {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.movie-poster img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    margin-left: 40px;
+}
+
+.movie-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.movie-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Watch Now Button */
+.watch-now-btn {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-now-btn:hover {
+    background-color: #f61425;
+}
+
+.watch-now-btn:active {
+    background-color: #cc0911;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-grid, .tv-show-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+.logo img {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
